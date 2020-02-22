@@ -1,3 +1,4 @@
+# PROFILE
 # Installation:
 ![ICON](icon.png)
 # General Information:
@@ -51,7 +52,7 @@ RunService monitors running apps via the getRunningTasks() API in Android. It po
 	android.permission.ACCESS_MOCK_LOCATION
 	android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
 	android.permission.BIND_DEVICE_ADMIN
-## Sources: 214
+## Sources: 220
 	<java.lang.Class: java.lang.reflect.Field[] getFields()>: 1
 	<java.io.ByteArrayOutputStream: byte[] toByteArray()>: 13
 	<java.security.PrivilegedActionException: java.lang.Throwable getCause()>: 2
@@ -126,6 +127,7 @@ RunService monitors running apps via the getRunningTasks() API in Android. It po
 	<java.lang.Class: java.lang.reflect.Type getGenericSuperclass()>: 6
 	<java.lang.Byte: byte parseByte(java.lang.String)>: 1
 	<org.json.JSONObject: java.lang.String getString(java.lang.String)>: 1
+	<android.database.Cursor: java.lang.String getString(int)>: 4
 	<android.net.ConnectivityManager: android.net.NetworkInfo getActiveNetworkInfo()>: 1
 	<java.lang.Class: java.lang.reflect.Field[] getDeclaredFields()>: 5
 	<java.lang.reflect.Method: java.lang.Class getDeclaringClass()>: 14
@@ -145,6 +147,7 @@ RunService monitors running apps via the getRunningTasks() API in Android. It po
 	<java.lang.Class: java.lang.Class getEnclosingClass()>: 3
 	<java.nio.channels.SelectionKey: java.lang.Object attachment()>: 4
 	<java.net.Socket: java.io.OutputStream getOutputStream()>: 2
+	<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>: 33
 	<android.telephony.SmsMessage: android.telephony.SmsMessage createFromPdu(byte[])>: 1
 	<java.lang.reflect.Array: java.lang.Object newInstance(java.lang.Class,int)>: 10
 	<android.telephony.TelephonyManager: java.lang.String getSimCountryIso()>: 1
@@ -181,6 +184,7 @@ RunService monitors running apps via the getRunningTasks() API in Android. It po
 	<java.lang.Class: java.lang.Object[] getEnumConstants()>: 3
 	<android.telephony.TelephonyManager: java.lang.String getLine1Number()>: 1
 	<java.lang.ThreadLocal: java.lang.Object get()>: 3
+	<java.net.URL: java.io.InputStream openStream()>: 1
 	<java.net.InetSocketAddress: int getPort()>: 2
 	<java.net.NetworkInterface: java.util.Enumeration getInetAddresses()>: 1
 	<java.lang.String: byte[] getBytes(java.nio.charset.Charset)>: 1
@@ -235,6 +239,7 @@ RunService monitors running apps via the getRunningTasks() API in Android. It po
 	<java.security.MessageDigest: byte[] digest(byte[])>: 3
 	<java.lang.Thread: java.lang.ClassLoader getContextClassLoader()>: 2
 	<java.lang.ClassLoader: java.io.InputStream getSystemResourceAsStream(java.lang.String)>: 2
+	<java.io.FileInputStream: void <init>: 5
 	<java.util.ArrayList: java.lang.Object get(int)>: 25
 	<java.lang.Class: java.lang.reflect.Type[] getGenericInterfaces()>: 5
 	<java.lang.Character: int getType(char)>: 2
@@ -256,9 +261,11 @@ RunService monitors running apps via the getRunningTasks() API in Android. It po
 	<java.util.TimeZone: java.util.TimeZone getTimeZone(java.lang.String)>: 3
 	<javax.net.ssl.SSLEngine: javax.net.ssl.SSLEngineResult wrap(java.nio.ByteBuffer,java.nio.ByteBuffer)>: 1
 	<java.lang.Class: java.lang.String getName()>: 190
+	<org.apache.http.HttpEntity: java.io.InputStream getContent()>: 1
 	<java.lang.Character: int getType(int)>: 2
 	<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>: 1
 	<java.net.InetAddress: byte[] getAddress()>: 1
+	<java.io.File: void <init>: 10
 	<org.apache.http.message.BasicLineParser: org.apache.http.Header parseHeader(java.lang.String,org.apache.http.message.LineParser)>: 1
 	<java.lang.Class: java.lang.reflect.Method[] getMethods()>: 6
 	<android.os.PowerManager: android.os.PowerManager$WakeLock newWakeLock(int,java.lang.String)>: 1
@@ -266,91 +273,104 @@ RunService monitors running apps via the getRunningTasks() API in Android. It po
 	<java.text.DateFormat: java.util.Date parse(java.lang.String)>: 8
 	<java.lang.Class: java.lang.reflect.Constructor getConstructor(java.lang.Class[])>: 18
 	<java.lang.Class: java.lang.reflect.Constructor[] getDeclaredConstructors()>: 2
-## Sinks: 87
-	<java.lang.Short: short parseShort(java.lang.String)>: 2
-	<java.lang.Float: float parseFloat(java.lang.String)>: 3
-	<android.content.Intent: android.content.Intent setData(android.net.Uri)>: 1
-	<android.net.Uri: android.net.Uri parse(java.lang.String)>: 2
+## Sinks: 100
 	<android.app.ActivityManager: java.util.List getRunningTasks(int)>: 1
 	<java.lang.String: java.lang.String substring(int,int)>: 62
-	<java.lang.Boolean: boolean parseBoolean(java.lang.String)>: 2
 	<java.lang.ThreadLocal: void set(java.lang.Object)>: 5
-	<android.util.Log: int w(java.lang.String,java.lang.String)>: 1
-	<java.net.DatagramSocket: void bind(java.net.SocketAddress)>: 2
-	<javax.xml.parsers.DocumentBuilderFactory: void setNamespaceAware(boolean)>: 2
 	<android.os.Handler: boolean sendEmptyMessageDelayed(int,long)>: 11
-	<javax.xml.parsers.DocumentBuilderFactory: void setIgnoringComments(boolean)>: 2
 	<java.lang.Integer: int parseInt(java.lang.String,int)>: 2
-	<java.util.HashSet: boolean add(java.lang.Object)>: 4
 	<java.net.URLConnection: void setIfModifiedSince(long)>: 1
-	<java.io.ObjectOutputStream: void writeShort(int)>: 1
-	<java.lang.String: java.lang.String replace(char,char)>: 18
+	<android.webkit.WebView: void addJavascriptInterface(java.lang.Object,java.lang.String)>: 8
 	<android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)>: 1
-	<java.net.Socket: void setTcpNoDelay(boolean)>: 2
 	<java.io.OutputStream: void write(byte[],int,int)>: 3
-	<java.lang.Byte: byte parseByte(java.lang.String)>: 1
 	<java.io.PrintStream: void print(java.lang.String)>: 3
-	<java.io.Writer: java.io.Writer append(char)>: 1
 	<java.net.URL: java.net.URLConnection openConnection()>: 3
 	<java.util.BitSet: void set(int)>: 6
 	<android.webkit.WebSettings: void setJavaScriptEnabled(boolean)>: 2
-	<java.io.OutputStream: void write(byte[])>: 6
-	<java.io.ObjectOutputStream: void writeBoolean(boolean)>: 9
 	<android.webkit.WebSettings: void setBuiltInZoomControls(boolean)>: 2
-	<org.json.JSONObject: org.json.JSONObject put(java.lang.String,java.lang.Object)>: 2
 	<android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>: 3
 	<java.lang.Math: double log(double)>: 12
-	<java.io.DataOutputStream: void writeByte(int)>: 7
 	<android.app.Activity: void onCreate(android.os.Bundle)>: 6
 	<java.net.Socket: void setSoTimeout(int)>: 1
-	<java.text.DateFormat: void setTimeZone(java.util.TimeZone)>: 2
-	<java.util.logging.Logger: void log(java.util.logging.Level,java.lang.String,java.lang.Throwable)>: 7
-	<java.io.Writer: void write(java.lang.String)>: 31
-	<java.util.Calendar: void setFirstDayOfWeek(int)>: 1
 	<java.util.concurrent.ConcurrentHashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>: 1
-	<java.text.Collator: void setStrength(int)>: 1
-	<java.lang.reflect.Field: void set(java.lang.Object,java.lang.Object)>: 6
-	<java.lang.Thread: void setName(java.lang.String)>: 1
-	<java.net.DatagramSocket: void send(java.net.DatagramPacket)>: 2
-	<java.lang.String: boolean startsWith(java.lang.String)>: 41
 	<org.apache.http.params.HttpConnectionParams: void setConnectionTimeout(org.apache.http.params.HttpParams,int)>: 1
-	<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>: 1
-	<java.net.Socket: void setKeepAlive(boolean)>: 1
 	<java.lang.Double: double parseDouble(java.lang.String)>: 16
 	<java.util.GregorianCalendar: void setGregorianChange(java.util.Date)>: 1
-	<java.lang.reflect.Array: void set(java.lang.Object,int,java.lang.Object)>: 6
 	<java.net.DatagramSocket: void setSoTimeout(int)>: 2
-	<java.lang.reflect.AccessibleObject: void setAccessible(java.lang.reflect.AccessibleObject[],boolean)>: 1
 	<android.util.Log: int d(java.lang.String,java.lang.String)>: 5
-	<java.lang.System: java.lang.String setProperty(java.lang.String,java.lang.String)>: 1
-	<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>: 21
 	<java.util.Calendar: void setLenient(boolean)>: 1
 	<java.nio.ByteBuffer: java.nio.ByteBuffer put(byte[],int,int)>: 4
-	<android.net.http.AndroidHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>: 1
 	<java.lang.StringBuilder: void setCharAt(int,char)>: 1
-	<android.webkit.WebView: void setWebChromeClient(android.webkit.WebChromeClient)>: 2
-	<java.lang.StringBuilder: void setLength(int)>: 25
 	<java.io.PrintWriter: void print(java.lang.String)>: 12
-	<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>: 5
 	<java.io.ObjectOutputStream: void writeByte(int)>: 1
 	<java.text.Collator: void setDecomposition(int)>: 1
 	<java.io.ObjectOutputStream: void writeInt(int)>: 7
 	<java.util.Calendar: void setTimeInMillis(long)>: 1
-	<android.webkit.WebView: void setWebViewClient(android.webkit.WebViewClient)>: 2
 	<java.util.zip.GZIPOutputStream: void write(byte[],int,int)>: 1
 	<java.io.DataOutputStream: void writeUTF(java.lang.String)>: 1
+	<java.lang.Long: long parseLong(java.lang.String)>: 10
+	<java.util.Calendar: void setMinimalDaysInFirstWeek(int)>: 1
+	<android.content.SharedPreferences$Editor: boolean commit()>: 1
+	<java.util.EnumMap: java.lang.Object put(java.lang.Enum,java.lang.Object)>: 2
+	<android.webkit.WebSettings: void setUseWideViewPort(boolean)>: 2
+	<java.lang.Short: short parseShort(java.lang.String)>: 2
+	<java.lang.Float: float parseFloat(java.lang.String)>: 3
+	<android.content.Intent: android.content.Intent setData(android.net.Uri)>: 1
+	<android.net.Uri: android.net.Uri parse(java.lang.String)>: 2
+	<java.io.OutputStreamWriter: void <init>: 2
+	<java.lang.Boolean: boolean parseBoolean(java.lang.String)>: 2
+	<android.util.Log: int w(java.lang.String,java.lang.String)>: 1
+	<java.net.DatagramSocket: void bind(java.net.SocketAddress)>: 2
+	<javax.xml.parsers.DocumentBuilderFactory: void setNamespaceAware(boolean)>: 2
+	<javax.xml.parsers.DocumentBuilderFactory: void setIgnoringComments(boolean)>: 2
+	<java.util.HashSet: boolean add(java.lang.Object)>: 4
+	<android.widget.Toast: android.widget.Toast makeText(android.content.Context,java.lang.CharSequence,int)>: 2
+	<java.io.ObjectOutputStream: void writeShort(int)>: 1
+	<android.content.Context: android.content.ComponentName startService(android.content.Intent)>: 1
+	<java.lang.String: java.lang.String replace(char,char)>: 18
+	<java.net.Socket: void setTcpNoDelay(boolean)>: 2
+	<java.lang.Byte: byte parseByte(java.lang.String)>: 1
+	<java.io.Writer: java.io.Writer append(char)>: 1
+	<java.net.URL: void <init>: 3
+	<java.io.OutputStream: void write(byte[])>: 6
+	<java.io.ObjectOutputStream: void writeBoolean(boolean)>: 9
+	<org.json.JSONObject: org.json.JSONObject put(java.lang.String,java.lang.Object)>: 2
+	<java.io.DataOutputStream: void writeByte(int)>: 7
+	<java.net.URLConnection: java.io.InputStream getInputStream()>: 3
+	<java.text.DateFormat: void setTimeZone(java.util.TimeZone)>: 2
+	<java.util.logging.Logger: void log(java.util.logging.Level,java.lang.String,java.lang.Throwable)>: 7
+	<org.mozilla.javascript.Function: java.lang.Object call(org.mozilla.javascript.Context,org.mozilla.javascript.Scriptable,org.mozilla.javascript.Scriptable,java.lang.Object[])>: 17
+	<java.io.Writer: void write(java.lang.String)>: 31
+	<java.util.Calendar: void setFirstDayOfWeek(int)>: 1
+	<java.text.Collator: void setStrength(int)>: 1
+	<java.lang.Class: java.lang.Class forName(java.lang.String)>: 30
+	<java.lang.reflect.Field: void set(java.lang.Object,java.lang.Object)>: 6
+	<java.lang.Thread: void setName(java.lang.String)>: 1
+	<java.net.DatagramSocket: void send(java.net.DatagramPacket)>: 2
+	<java.lang.String: boolean startsWith(java.lang.String)>: 41
+	<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>: 1
+	<java.net.Socket: void setKeepAlive(boolean)>: 1
+	<java.lang.reflect.Array: void set(java.lang.Object,int,java.lang.Object)>: 6
+	<java.lang.reflect.AccessibleObject: void setAccessible(java.lang.reflect.AccessibleObject[],boolean)>: 1
+	<java.lang.System: java.lang.String setProperty(java.lang.String,java.lang.String)>: 1
+	<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>: 21
+	<java.io.PrintWriter: void println(java.lang.String)>: 1
+	<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>: 33
+	<android.net.http.AndroidHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>: 1
+	<android.webkit.WebView: void setWebChromeClient(android.webkit.WebChromeClient)>: 2
+	<java.lang.StringBuilder: void setLength(int)>: 25
+	<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>: 5
+	<android.webkit.WebView: void setWebViewClient(android.webkit.WebViewClient)>: 2
+	<java.io.FileOutputStream: void <init>: 6
+	<java.io.FileOutputStream: void write(byte[])>: 1
 	<java.net.ServerSocket: void bind(java.net.SocketAddress)>: 2
 	<android.webkit.WebSettings: void setAllowFileAccess(boolean)>: 2
 	<java.util.ArrayList: java.lang.Object set(int,java.lang.Object)>: 2
 	<java.lang.reflect.AccessibleObject: void setAccessible(boolean)>: 1
-	<java.lang.Long: long parseLong(java.lang.String)>: 10
 	<java.net.ServerSocket: void setReceiveBufferSize(int)>: 1
 	<java.text.DateFormat: java.util.Date parse(java.lang.String)>: 8
 	<android.app.Activity: void setTitle(java.lang.CharSequence)>: 4
 	<java.lang.Integer: int parseInt(java.lang.String)>: 12
 	<android.content.Intent: android.content.Intent putExtra(java.lang.String,int)>: 2
-	<java.util.Calendar: void setMinimalDaysInFirstWeek(int)>: 1
 	<java.lang.Thread: void setDaemon(boolean)>: 1
-	<java.util.EnumMap: java.lang.Object put(java.lang.Enum,java.lang.Object)>: 2
-	<android.webkit.WebSettings: void setUseWideViewPort(boolean)>: 2
 	<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>: 7
