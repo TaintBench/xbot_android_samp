@@ -78,7 +78,8 @@
         "reflection": true
       },
       "ID": 1,
-      "description": "This malicious partial ICC flow starts by reading the Intent with which the SMSHandler BroadcasReceiver started. The intent contains SMS messagees, which will be sent to a remote server with some script call defined by the malware writer.  "
+      "description": "This malicious partial ICC flow starts by reading the Intent with which the SMSHandler BroadcasReceiver started. The intent contains SMS messagees, which will be sent to a remote server with some script call defined by the malware writer.  ",
+      "isNegative": false
     },
     {
       "source": {
@@ -124,7 +125,8 @@
         "payload": true
       },
       "ID": 2,
-      "description": "This malicious flow reads the device id and put it into an Array of String, the array is used as the return value of the method getTelephonyInfo() of the class xAPI. An object of xAPI is injected into the WebView by addJavascriptInterface. The method getTelephonyInfo() can be invoked via JavaScript code.  "
+      "description": "This malicious flow reads the device id and put it into an Array of String, the array is used as the return value of the method getTelephonyInfo() of the class xAPI. An object of xAPI is injected into the WebView by addJavascriptInterface. The method getTelephonyInfo() can be invoked via JavaScript code.  ",
+      "isNegative": false
     },
     {
       "source": {
@@ -208,7 +210,8 @@
         "payload": true
       },
       "ID": 3,
-      "description": "This malicous reads contacts and store them into an ArrayList, this ArrayList is used as the return value of the method getContacts() of the class xAPI.An object of xAPI is injected into the WebView by addJavascriptInterface. The method getContacts() can be invoked via JavaScript code. "
+      "description": "This malicous reads contacts and store them into an ArrayList, this ArrayList is used as the return value of the method getContacts() of the class xAPI.An object of xAPI is injected into the WebView by addJavascriptInterface. The method getContacts() can be invoked via JavaScript code. ",
+      "isNegative": false
     }
   ]
 }
